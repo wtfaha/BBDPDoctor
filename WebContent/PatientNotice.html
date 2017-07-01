@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BBDP</title>
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/frame/icon.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="frame/metisMenu/metisMenu.css" rel="stylesheet">
+		<script src="frame/metisMenu/metisMenu.js"></script>
+		<link href="frame/sb-admin-2/sb-admin-2.css" rel="stylesheet">
+		<script src="frame/sb-admin-2/sb-admin-2.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- 醫生端框架 css -->
+		<link href="css/doctorFrame.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- prepend navbar in doctorFrame.js -->
+			<div id="page-wrapper">
+				<div class="row">
+					<!-- prepend nav-tabs in patientInformationFrame.js -->
+					<!-- 內容 -->
+					<div class="col-md-12 col-xs-12">
+						<div class="row">
+							<div class="col-md-12 col-xs-12" style="margin-top: 3vh; margin-bottom: 3vh;">
+								<span class="lead"><b>新增注意事項</b></span>
+							</div>
+						</div>
+						<div class="row" style="padding-left: 1vw; padding-right: 1vw;">
+							<!-- 灰框 -->
+							<div class="panel panel-default left-list">
+								<!-- 灰框上面 -->
+								<div class="panel-heading">
+									<div class="row" style="margin-left: 0.5vw;">
+										<h5><b>分類</b></h5>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<!-- 灰框上面的分類選單 -->
+											<select class="form-control" onChange="">
+												<option value="" selected="selected">注意事項分類</option>
+												<option value="">巴金森氏症</option>
+											</select>
+										</div>
+										<div class="col-md-6"></div>
+									</div>
+									<div class="row" style="margin-left: 0.5vw;">
+										<h5><b>注意事項</b></h5>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-9" style="margin-bottom: 1vh;;">
+											<!-- 灰框上面的注意事項選單 -->
+											<select class="form-control" onChange="">
+												<option value="" selected="selected"></option>
+												<option value="" >每日持續運動</option>
+											</select>
+										</div>
+										<div class="col-md-3 col-sm-3" style="margin-bottom: 1vh;;">
+											<button type="button" class="btn btn-default" onclick="">送出</button>
+										</div>
+										<div class="col-md-3 col-sm-0" style="margin-bottom: 1vh;;"></div>
+									</div>
+								</div>
+								<!-- 灰框下面 -->
+								<div class="panel-body">
+									<div class="row" style="margin-left: 0.5vw;">
+										<h5><b>直接新增注意事項</b></h5>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-9" style="margin-bottom: 1vh;;">
+											<input type="text" class="form-control" placeholder="請輸入要新增的注意事項..." />
+										</div>
+										<div class="col-md-3 col-sm-3" style="margin-bottom: 1vh;;">
+											<button type="button" class="btn btn-default" onclick="">送出</button>
+										</div>
+										<div class="col-md-3 col-sm-0" style="margin-bottom: 1vh;;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 醫生端框架 js -->
+		<script src="js/doctorFrame.js"></script>
+		<!-- 病患資訊框架 js -->
+		<script src="js/patientInformationFrame.js"></script>
+	</body>
+</html>

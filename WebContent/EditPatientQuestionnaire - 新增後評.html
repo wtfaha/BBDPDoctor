@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BBDP</title>
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/frame/icon.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="frame/metisMenu/metisMenu.css" rel="stylesheet">
+		<script src="frame/metisMenu/metisMenu.js"></script>
+		<link href="frame/sb-admin-2/sb-admin-2.css" rel="stylesheet">
+		<script src="frame/sb-admin-2/sb-admin-2.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- 醫生端框架 css -->
+		<link href="css/doctorFrame.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- prepend navbar in doctorFrame.js -->
+			<div id="page-wrapper">
+				<div class="row">
+					<!-- 內容 -->
+					<div class="col-md-12">
+						<div class="row">
+							<!-- 左邊灰框 -->
+							<div class="col-md-4" style="margin-top: 3vh; margin-bottom: 3vh;">
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="btn btn-default" onclick="location.href='NewPatientQuestionnaire.html'">新增問卷</button>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<br />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="panel panel-default left-list" style="min-height: 68vh; max-height: 68vh;">
+											<div class="panel-heading">
+												<!-- 左邊灰框上面的選單 -->
+												<div class="form-group row" style="margin-bottom: 0;">
+													<div class="col-md-6 col-sm-6">
+														<select class="form-control">
+															<option value="">問卷分類</option>
+														</select>
+													</div>
+												</div>						
+												<div class="form-group row" style="margin-bottom: 0;">
+													<div class="col-md-6 col-sm-6" style="margin-bottom: 0.5vh; margin-top: 0.5vh;">
+														<select class="form-control">
+															<option value="">請選擇</option>
+															<option value="">年</option>
+															<option value="">月</option>
+														</select>
+													</div>
+													<div class="col-md-6 col-sm-6" style="margin-bottom: 0.5vh; margin-top: 0.5vh;">
+														<select class="form-control">
+															<option value="">所有時間</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="panel-body" style="overflow-y: auto;">
+												<div class="list-group">
+													<!-- 左邊灰框下面的項目(動態產生) -->
+													<a href="EditPatientQuestionnaire.html" class="list-group-item left-list-item questionnairePink">
+														<h4 class="list-group-item-heading">巴金森氏症問卷</h4>
+														<span class="list-group-item-text">2017-04-01</span>
+														<span class="list-group-item-text pull-right">自評</span>
+													</a>
+													<a href="EditPatientQuestionnaire - 後評.html" class="list-group-item left-list-item questionnaireGreen">
+														<h4 class="list-group-item-heading">巴金森氏症問卷</h4>
+														<span class="list-group-item-text">2017-03-02</span>
+														<span class="list-group-item-text pull-right">後評</span>
+													</a>
+													<a href="EditPatientQuestionnaire.html" class="list-group-item left-list-item questionnairePink">
+														<h4 class="list-group-item-heading">巴金森氏症問卷</h4>
+														<span class="list-group-item-text">2017-03-01</span>
+														<span class="list-group-item-text pull-right">自評</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8" style="margin-top: 3vh; margin-bottom: 3vh;">
+								<div class="row">
+									<div class="col-md-10 col-sm-10 col-xs-9">
+										<!-- 右邊灰框上面的粉紅色的標題 -->
+										<div class="list-group list-group-horizontal">
+											<li class="list-group-item pinkTitle">巴金森氏症問卷</li>
+											<li class="list-group-item pinkTitle">2017-04-01</li>
+											<li class="list-group-item pinkTitle">自評 8分</li>
+										</div>
+									</div>
+									<div class="col-md-2 col-sm-2 col-xs-3">
+										<!-- 右上角的更多按鈕 -->
+										<div class="btn-group pull-right">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+												更多
+												<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li><a onclick="" style="cursor: pointer;">儲存</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<br />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<!-- 右邊灰框 -->
+										<div class="panel panel-default right-content" style="min-height: 68vh; max-height: 68vh;">
+											<div class="panel-body" style="overflow-y: auto;">
+												<div class="panel-group">
+													<!-- 右邊灰框下面的題目(動態產生) -->
+													<!-- Part -->
+													<div class="panel panel-default greenQuestion">
+														<div class="panel-heading">Part 1</div>
+													</div>
+													<!-- 題目 -->
+													<div class="panel panel-default greenQuestion">
+														<div class="panel-heading">題目</div>
+														<div class="panel-body">
+															<form>
+																<div class="radio">
+																	<label><input type="radio" name="q1">0 = 選項1</label>
+																</div>
+																<div class="radio">
+																	<label><input type="radio" name="q1">1 = 選項2</label>
+																</div>
+															</form>
+														</div>
+													</div>
+													<!-- 病患答案 -->
+													<div class="list-group list-group-horizontal" style="margin-top: 1vh; margin-bottom: 2vh;">
+														<li class="list-group-item pinkAnswer">病患答案</li>
+														<li class="list-group-item pinkAnswer">0 = 選項1</li>
+													</div>
+													<div class="panel panel-default greenQuestion">
+														<div class="panel-heading">題目</div>
+														<div class="panel-body">
+															<form>
+																<div class="radio">
+																	<label><input type="radio" name="q2">0 = 選項1</label>
+																</div>
+																<div class="radio">
+																	<label><input type="radio" name="q2">1 = 選項2</label>
+																</div>
+															</form>
+														</div>
+													</div>
+													<div class="list-group list-group-horizontal" style="margin-top: 1vh; margin-bottom: 2vh;">
+														<li class="list-group-item pinkAnswer">病患答案</li>
+														<li class="list-group-item pinkAnswer">0 = 選項1</li>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 醫生端框架 js -->
+		<script src="js/doctorFrame.js"></script>
+		<!-- 病患資訊框架 js -->
+		<script src="js/patientInformationFrame.js"></script>
+		<!-- 計算高度 -->
+		<script>
+			//左邊灰框的panel-body高度
+			$(".left-list > .panel-body").css("min-height", "46vh");
+			$(".left-list > .panel-body").css("max-height", "46vh");
+			//右邊灰框的panel-body高度
+			$(".right-content > .panel-body").css("height", $(".right-content").outerHeight() - 40);
+		</script>
+	</body>
+</html>

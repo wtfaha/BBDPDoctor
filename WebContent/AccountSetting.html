@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BBDP</title>
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/frame/icon.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="frame/metisMenu/metisMenu.css" rel="stylesheet">
+		<script src="frame/metisMenu/metisMenu.js"></script>
+		<link href="frame/sb-admin-2/sb-admin-2.css" rel="stylesheet">
+		<script src="frame/sb-admin-2/sb-admin-2.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- 醫生端框架 css -->
+		<link href="css/doctorFrame.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- prepend navbar in doctorFrame.js -->
+			<div id="page-wrapper">
+				<!-- 內容 -->
+				<div class="row">
+					<div class="col-md-12" style="margin-top: 3vh; margin-bottom: 2vh;">
+						<span class="lead"><b>帳戶設定</b></span>
+					</div>
+				</div>
+				<div class="row" style="padding-left: 1vw; padding-right: 1vw;">
+					<div class="col-md-6">
+						<div class="panel panel-default left-list">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-md-12">
+										<h5><b>姓名</b></h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="input-group" style="margin-bottom: 1vh;">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+											<input id="name" type="text" class="form-control" placeholder="請輸入姓名..." />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<h5><b>所屬醫院</b></h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="input-group" style="margin-bottom: 1vh;">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-header"></i></span>
+											<input id="hospital" type="text" class="form-control" placeholder="請輸入所屬醫院..." disabled />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<h5><b>所屬科別</b></h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="input-group" style="margin-bottom: 1vh;">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+											<input id="department" type="text" class="form-control" placeholder="請輸入所屬科別..." />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<h5><b>帳號</b></h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="input-group" style="margin-bottom: 1vh;">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+											<input id="account" type="text" class="form-control" placeholder="請輸入帳號..." disabled />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<h5><b>密碼</b>&nbsp&nbsp(介於6~15字元間)</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="input-group" style="margin-bottom: 1vh;">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+											<input  id="password" type="password" class="form-control" placeholder="請輸入密碼..." />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<h5><b>確認密碼</b></h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="input-group" style="margin-bottom: 1vh;">
+											<span class="input-group-addon"><i class="glyphicon glyphicon-ok-sign"></i></span>
+											<input id="passwordCheck" type="password" class="form-control" placeholder="請再輸入一次密碼..." />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer">
+								<div class="row">
+									<div class="col-md-12">
+										<button id="change" type="button" class="btn btn-default" onclick="">提交</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default left-list">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-md-12">
+										<h5><b>醫生專屬 QR code</b></h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<img class="img-responsive" src="img/accountSetting/doctorQRCode.png" />
+									</div>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<h5><b>BBDP病患端App QR code</b></h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<img class="img-responsive" src="img/accountSetting/DownloadBBDPAppQRCode.png" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 醫生端框架 js -->
+		<script src="js/doctorFrame.js"></script>
+		<!-- 計算高度 -->
+		<script>
+			//右邊灰框的高度
+			$("#page-wrapper > .row:last > .col-md-6:last > .panel").outerHeight($("#page-wrapper > .row:last > .col-md-6:first > .panel").outerHeight());
+		</script>
+	</body>
+</html>
